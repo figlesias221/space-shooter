@@ -5,7 +5,7 @@ public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     private int score = 0;
-    private int scoreIncrement = 100; // Score increment to trigger difficulty increase
+    private int scoreIncrement = 15; // Score increment to trigger difficulty increase
     private int difficulty = 1; // Initial difficulty level
 
     private float scoreAccumulator = 0f; // Accumulates time to track score increment
