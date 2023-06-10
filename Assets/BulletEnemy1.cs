@@ -35,7 +35,7 @@ public class BulletEnemy1 : MonoBehaviour
             playerHealth.TakeDamage();
         }
 
-        Destroy(gameObject);
+        GameObject.Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -48,6 +48,6 @@ public class BulletEnemy1 : MonoBehaviour
         //     health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
         // }
 
-        // GameObject.Destroy(gameObject);
+        GameObject.Destroy(gameObject);
     }
 }
