@@ -13,6 +13,14 @@ public class WeaponPlayer : MonoBehaviour
     public GameObject bulletPrefab;
     // public SpriteRenderer spriteRenderer;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+
+    public void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = clip;
+    }
 
     private void FixedUpdate()
     {
@@ -22,6 +30,7 @@ public class WeaponPlayer : MonoBehaviour
         {
             var bulletObject = GameObject.Instantiate(bulletPrefab, bulletAttachPoint.position, bulletAttachPoint.rotation);
             bulletObject.GetComponent<BulletPlayer>().Fire();
+            audioSource.Play();
             reload.Reset();
         }
     }
