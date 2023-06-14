@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7441422144219389103}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BulletAttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,8 @@ GameObject:
   - component: {fileID: 7718103853326042173}
   - component: {fileID: 965710041606498455}
   - component: {fileID: -2239696504477725805}
-  m_Layer: 0
+  - component: {fileID: 286636551286726072}
+  m_Layer: 9
   m_Name: enemyRed1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,6 +363,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &286636551286726072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8985136960124486807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7376507cf254518b86a4505d881409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3369822989462247214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369,9 +382,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985136960124486801}
     m_Modifications:
+    - target: {fileID: 446646187917406759, guid: 43bc50d3e94ae4cdcaf0ca773d77e47f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3320075932600880328, guid: 43bc50d3e94ae4cdcaf0ca773d77e47f, type: 3}
       propertyPath: m_Name
       value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320075932600880328, guid: 43bc50d3e94ae4cdcaf0ca773d77e47f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7747026163261945447, guid: 43bc50d3e94ae4cdcaf0ca773d77e47f, type: 3}
       propertyPath: m_Pivot.x
@@ -461,6 +482,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 4227887812417646029}
+    - target: {fileID: 8524262982207990430, guid: 43bc50d3e94ae4cdcaf0ca773d77e47f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43bc50d3e94ae4cdcaf0ca773d77e47f, type: 3}
 --- !u!224 &4991944522938523977 stripped

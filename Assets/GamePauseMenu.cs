@@ -17,6 +17,12 @@ public class GamePauseMenu : MonoBehaviour
         canvasObject.SetActive(false);
     }
 
+    public void OnMainMenu()
+    {
+        Time.timeScale = 0;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
+
     public void OnExit()
     {
         Application.Quit();

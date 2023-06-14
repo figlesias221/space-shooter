@@ -38,6 +38,10 @@ public class ScoreManager : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            PlayerPrefs.SetFloat("Player Score", score);
+        }
     }
 
     private void UpdateScoreText()
