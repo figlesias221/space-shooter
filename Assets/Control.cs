@@ -10,6 +10,7 @@ public class Control : MonoBehaviour
     {
         movimiento.direction.x = Input.GetAxis("Horizontal");
         movimiento.direction.y = Input.GetAxis("Vertical");
-        weapon.isTriggerPressed = Input.GetButton("Fire1");
+
+        weapon.isTriggerPressed = Input.GetButton("Fire1") || Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.LeftControl);
     }
 }
