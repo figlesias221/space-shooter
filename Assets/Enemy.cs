@@ -11,7 +11,5 @@ public class Enemy : MonoBehaviour
         {
             playerHealth.TakeDamage();
         }
-
-        //GameObject.Destroy(gameObject);
     }
 }

@@ -16,8 +16,6 @@ public class GameController : MonoBehaviour
     {
         pauseMenu.Open();
     }
-
-    // check for player, if player is dead, show game over menu
     private void Update()
     {
         if (GameObject.FindWithTag("Player") == null)

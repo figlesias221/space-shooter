@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: 2
   total: 2
+  scoreManager: {fileID: 0}
 --- !u!95 &7718103853326042173
 Animator:
   serializedVersion: 5

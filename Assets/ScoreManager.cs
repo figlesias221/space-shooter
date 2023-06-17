@@ -4,35 +4,34 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI killsText;
+
+    public Health[] enemiesHealth;
     private int score = 0;
     private int scoreIncrement = 15; // Score increment to trigger difficulty increase
     private int difficulty = 1; // Initial difficulty level
-
     private float scoreAccumulator = 0f; // Accumulates time to track score increment
-
     private void Start()
     {
-        scoreText.text = score.ToString(); // Set initial score text
+        scoreText.text = "Score: " + score.ToString();
+        PlayerPrefs.SetInt("Kills", 0);
     }
 
     void Update()
     {
+        UpdateKillsText();
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            // Accumulate time for score increment
             scoreAccumulator += Time.deltaTime;
 
-            // Check if the score increment condition is met
-            if (scoreAccumulator >= 1f) // Increase score every 1 second
+            if (scoreAccumulator >= 1f)
             {
-                // Increase the score based on difficulty level
                 score += 1 * difficulty;
-                scoreAccumulator -= 1f; // Reset the score accumulator
+                scoreAccumulator -= 1f;
 
                 UpdateScoreText();
 
-                // Check if the score has reached a multiple of the score increment
-                if (score % (scoreIncrement) == 0) // Increase difficulty every 10 score increments
+                if (score % (scoreIncrement) == 0)
                 {
                     IncreaseDifficulty();
                 }
@@ -44,13 +43,24 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    public void UpdateKillsText()
+    {
+        killsText.text = "Kills: " + PlayerPrefs.GetInt("Kills").ToString();
+    }
+
     private void UpdateScoreText()
     {
-        scoreText.text = score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
 
     private void IncreaseDifficulty()
     {
         difficulty++;
+        foreach (var enemyHealth in enemiesHealth)
+        {
+            Debug.Log("Increasing enemy health");
+            enemyHealth.total += 1f;
+            enemyHealth.current = enemyHealth.total;
+        }
     }
 }

@@ -9,13 +9,6 @@ public class HealthBar : MonoBehaviour
     public CanvasGroup canvasGroup;
     public Transform bar;
 
-    // public Animator animator;
-
-    // public void OnDamage(float damage)
-    // {
-    //     animator.SetTrigger("hit");
-    // }
-
     private void Update()
     {
         canvasGroup.alpha = health.factor < 1 ? 1 : 0;
