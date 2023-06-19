@@ -37,17 +37,8 @@ public class BulletEnemy1 : MonoBehaviour
 
         GameObject.Destroy(gameObject);
     }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("COLISION");
-
-        // var health = other.gameObject.GetComponent<Health>();
-        // if (health != null)
-        // {
-        //     health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
-        // }
-
         GameObject.Destroy(gameObject);
     }
 }

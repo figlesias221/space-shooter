@@ -38,7 +38,6 @@ public class PlayerHealth : MonoBehaviour
 
             if (currentLives == 0)
             {
-                // Player loses, handle game over logic here
                 GameOver();
             }
             else
@@ -56,7 +55,6 @@ public class PlayerHealth : MonoBehaviour
 
         while (Time.time < endTime)
         {
-            // Toggle the visibility of the player sprite
             spriteRenderer.enabled = !spriteRenderer.enabled;
 
             yield return new WaitForSeconds(blinkInterval);
@@ -86,7 +84,14 @@ public class PlayerHealth : MonoBehaviour
         mainCameraTransform.localPosition = originalCameraLocalPosition;
     }
 
-
+    public void IncreaseLife()
+    {
+        if (currentLives < maxLives)
+        {
+            currentLives++;
+            UpdateLifeImages();
+        }
+    }
 
 
     private void UpdateLifeImages()
@@ -102,7 +107,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void GameOver()
     {
-        // destroy player
         Destroy(gameObject);
     }
 }

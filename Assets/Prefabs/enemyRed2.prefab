@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: 3
   total: 3
+  scoreManager: {fileID: 0}
 --- !u!114 &7384598717728045027
 MonoBehaviour:
   m_ObjectHideFlags: 0

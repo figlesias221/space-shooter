@@ -19,7 +19,6 @@ public class SpawnEnemies : MonoBehaviour
 
     private float nextSpawn = 0f;
 
-    // Update is called once per frame
     void Update()
     {
         if (Time.time > nextSpawn)

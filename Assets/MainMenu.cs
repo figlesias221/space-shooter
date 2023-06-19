@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    // onClick event handler for the "Play" button
     public void OnPlay()
     {
         SceneManager.LoadScene("Game");

@@ -7,11 +7,9 @@ public class WeaponPlayer : MonoBehaviour
 
     public Cooldown reload;
 
-    // public Transform pivot;
     public Transform bulletAttachPoint;
 
     public GameObject bulletPrefab;
-    // public SpriteRenderer spriteRenderer;
 
     public AudioSource audioSource;
     public AudioClip clip;
