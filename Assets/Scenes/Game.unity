@@ -3098,8 +3098,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 1982781896561335693, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: rigid
+      value: 
+      objectReference: {fileID: 1982781895830009849}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+--- !u!50 &1982781895830009849 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1982781896561335682, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+  m_PrefabInstance: {fileID: 1982781895830009848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9142344605174554814
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,6 +5,12 @@ public class Control : MonoBehaviour
     [SerializeField]
     private Movimiento movimiento;
     public WeaponPlayer weapon;
+    public Rigidbody2D rigid;
+
+    public void Start()
+    {
+        movimiento.rigid = rigid;
+    }
 
     private void Update()
     {
