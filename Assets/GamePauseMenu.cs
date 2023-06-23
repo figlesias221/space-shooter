@@ -6,11 +6,6 @@ public class GamePauseMenu : MonoBehaviour
 {
     public GameObject canvasObject;
 
-    private void Awake()
-    {
-        canvasObject.SetActive(false);
-    }
-
     public void OnClose()
     {
         Time.timeScale = 1;

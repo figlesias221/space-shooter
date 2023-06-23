@@ -1572,7 +1572,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6808632744987849361, guid: 813f4573ce14e4ecc93c1fb1fa05d3aa, type: 3}
   m_PrefabInstance: {fileID: 6808632743919008090}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 6808632743919008091}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2624949f7fed342289441aefd340f9ee, type: 3}
@@ -2556,6 +2556,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6808632744987849361, guid: 813f4573ce14e4ecc93c1fb1fa05d3aa, type: 3}
+      propertyPath: canvasObject
+      value: 
+      objectReference: {fileID: 6808632743919008091}
     - target: {fileID: 6808632744987849363, guid: 813f4573ce14e4ecc93c1fb1fa05d3aa, type: 3}
       propertyPath: m_Name
       value: GamePauseMenu
@@ -2566,6 +2570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 813f4573ce14e4ecc93c1fb1fa05d3aa, type: 3}
+--- !u!1 &6808632743919008091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6808632744987849363, guid: 813f4573ce14e4ecc93c1fb1fa05d3aa, type: 3}
+  m_PrefabInstance: {fileID: 6808632743919008090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9142344605174554814
 PrefabInstance:
   m_ObjectHideFlags: 0
