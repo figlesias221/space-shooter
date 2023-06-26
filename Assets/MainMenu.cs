@@ -20,4 +20,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("About");
     }
+
+    public void OnHighScores()
+    {
+        SceneManager.LoadScene("HighScores");
+    }
 }
