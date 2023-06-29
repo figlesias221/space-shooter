@@ -4935,7 +4935,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982781896561335690}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 842d73e9ad8db4928b2d8f24b655209a, type: 2}
   m_CullingMode: 0
@@ -5075,6 +5075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movimiento: {fileID: 1982781896561335694}
   weapon: {fileID: 1982781896561335683}
+  rigid: {fileID: 0}
 --- !u!114 &1982781896561335694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5088,6 +5089,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  rigid: {fileID: 0}
+  tilt: 0
 --- !u!114 &1891675340320222374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5105,6 +5108,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  invincibilityDuration: 3
+  blinkInterval: 0.2
+  shakeDuration: 0.3
+  shakeMagnitude: 0.1
+  cameraInitialPosition: {x: 0, y: 0, z: 0}
   gameOverMenu: {fileID: 8250105791689572773, guid: 6a91950c4689b41249a24d84d8d21c48, type: 3}
 --- !u!82 &-4110811431784768564
 AudioSource:
