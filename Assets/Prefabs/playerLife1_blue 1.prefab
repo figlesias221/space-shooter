@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -775234811799727651}
   - component: {fileID: -7986624367705787729}
   - component: {fileID: 2629557813080940895}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: playerLife1_blue 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
