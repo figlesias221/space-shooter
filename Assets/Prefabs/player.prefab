@@ -4831,6 +4831,7 @@ GameObject:
   - component: {fileID: 1982781896561335694}
   - component: {fileID: 1891675340320222374}
   - component: {fileID: -4110811431784768564}
+  - component: {fileID: -1308351656161578289}
   m_Layer: 7
   m_Name: player
   m_TagString: Player
@@ -4925,6 +4926,7 @@ MonoBehaviour:
     current: 0
   bulletAttachPoint: {fileID: 1982781897010611058}
   bulletPrefab: {fileID: 4881565318377417155, guid: 7b72de25480be45b6ba7b9b152089ffa, type: 3}
+  missilePrefab: {fileID: 0}
   audioSource: {fileID: 0}
   clip: {fileID: 0}
 --- !u!95 &1982781896561335684
@@ -5210,6 +5212,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-1308351656161578289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982781896561335690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051d0d45fa89d42d29a2fea666e5a3bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPlayer: {fileID: 1982781896561335683}
 --- !u!1 &1982781897010611057
 GameObject:
   m_ObjectHideFlags: 0
