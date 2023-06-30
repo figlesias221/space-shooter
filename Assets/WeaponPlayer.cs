@@ -10,6 +10,7 @@ public class WeaponPlayer : MonoBehaviour
     public Transform bulletAttachPoint;
 
     public GameObject bulletPrefab;
+    public GameObject missilePrefab;
 
     public AudioSource audioSource;
     public AudioClip clip;
@@ -31,6 +32,11 @@ public class WeaponPlayer : MonoBehaviour
             audioSource.Play();
             reload.Reset();
         }
+    }
+
+    public void ChangeWeapon()
+    {
+        bulletPrefab = missilePrefab;
     }
 
     // public void SetWeapon(Weapon weapon)

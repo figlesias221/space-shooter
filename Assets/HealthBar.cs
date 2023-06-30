@@ -5,7 +5,6 @@ using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     public Health health;
-
     public CanvasGroup canvasGroup;
     public Transform bar;
 

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Destroyer
+  - Rocket
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - EnemyBullet
   - Enemy
   - TopBorder
-  - 
+  - HealthPickup
   - 
   - 
   - 
