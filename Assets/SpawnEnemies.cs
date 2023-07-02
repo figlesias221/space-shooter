@@ -16,8 +16,13 @@ public class SpawnEnemies : MonoBehaviour
     public float minY;
 
     public float spawnRate = 1f;
+    public float spawnRateIncrease = 0.1f;
+    public float spawnRateIncreaseInterval = 0.5f;
+
+    private float minSpawnRate = 0.5f;
 
     private float nextSpawn = 0f;
+    private float nextSpawnRateIncrease = 0f;
 
     void Update()
     {
@@ -27,6 +32,11 @@ public class SpawnEnemies : MonoBehaviour
             nextSpawn = Time.time + spawnRate;
         }
 
+        if (Time.time > nextSpawnRateIncrease && spawnRate > minSpawnRate)
+        {
+            spawnRate -= spawnRateIncrease;
+            nextSpawnRateIncrease = Time.time + spawnRateIncreaseInterval;
+        }
     }
 
     void Spawn()

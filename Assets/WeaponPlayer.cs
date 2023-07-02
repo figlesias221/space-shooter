@@ -34,16 +34,13 @@ public class WeaponPlayer : MonoBehaviour
         }
     }
 
+    public void decreaseReload()
+    {
+        reload.current -= 0.5f;
+    }
+
     public void ChangeWeapon()
     {
         bulletPrefab = missilePrefab;
     }
-
-    // public void SetWeapon(Weapon weapon)
-    // {
-    //     reload = weapon.reload;
-    //     bulletPrefab = weapon.bulletPrefab;
-    //     bulletFxPrefab = weapon.bulletFxPrefab;
-    //     spriteRenderer.sprite = weapon.spriteRenderer.sprite;
-    // }
 }

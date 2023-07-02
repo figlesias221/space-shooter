@@ -3553,7 +3553,9 @@ MonoBehaviour:
   minX: -3
   maxY: 3.5
   minY: 3
-  spawnRate: 2
+  spawnRate: 2.5
+  spawnRateIncrease: 0.1
+  spawnRateIncreaseInterval: 10
 --- !u!4 &1639824594
 Transform:
   m_ObjectHideFlags: 0
@@ -3829,7 +3831,7 @@ MonoBehaviour:
   maxX: -3.3
   minY: 0
   maxY: 0
-  spawnRate: 2.4
+  spawnRate: 3.3
 --- !u!114 &2146553950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9142344603642540256, guid: de07ab25e16b445d783f6a0908c455cf, type: 3}
@@ -3848,6 +3850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1254133}
     m_Modifications:
+    - target: {fileID: -1308351656161578289, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: missilePickupSpawn
+      value: 
+      objectReference: {fileID: 1639824596}
     - target: {fileID: 1891675340320222374, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
       propertyPath: lifeImages.Array.data[0]
       value: 
