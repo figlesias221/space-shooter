@@ -17,7 +17,7 @@ public class MissilePickupSpawn : MonoBehaviour
 
     private IEnumerator SpawnPickups()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(15f);
 
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(0, 1);
