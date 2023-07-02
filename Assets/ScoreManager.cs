@@ -63,4 +63,12 @@ public class ScoreManager : MonoBehaviour
             enemyHealth.current = enemyHealth.total;
         }
     }
+
+    public int Points
+    {
+        get
+        {
+            return score;
+        }
+    }
 }
