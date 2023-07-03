@@ -444,12 +444,12 @@ MonoBehaviour:
   m_text: 'space shooter
 
 
-    - wasd to move
+    - wasd or Arrows to move
 
-    - mouse to shoot
+    - mouse or j to shoot
 
-    - infinite
-    survival
+    -
+    infinite survival
 
     - points for kills and time of play
 
