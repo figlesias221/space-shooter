@@ -3584,7 +3584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPickup: {fileID: 6742369584000678069, guid: bddf12166037940a89cc7636747b1f69, type: 3}
-  spawnInterval: 17
+  spawnInterval: 2
   maxX: 3
   minX: -3
 --- !u!114 &1639824596
@@ -3602,6 +3602,7 @@ MonoBehaviour:
   missilePickup: {fileID: 17594767218297410, guid: a378e5a5556934a07889a49fb7640a02, type: 3}
   maxX: 3
   minX: -3
+  isPickupCollected: 0
 --- !u!1001 &1833913930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3914,6 +3915,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1982781896561335681, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982781896561335682, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982781896561335682, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982781896561335682, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1982781896561335683, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
       propertyPath: clip
       value: 
@@ -3934,6 +3951,10 @@ PrefabInstance:
       propertyPath: rigid
       value: 
       objectReference: {fileID: 1982781895830009849}
+    - target: {fileID: 8256933969817343160, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
 --- !u!50 &1982781895830009849 stripped

@@ -4,9 +4,7 @@ using UnityEngine;
 public class BulletPlayer : MonoBehaviour
 {
     public float speed;
-
     public int minDamage, maxDamage;
-
     public Cooldown timeToLive;
 
     // public GameObject hitFxPrefab;
@@ -29,8 +27,6 @@ public class BulletPlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("TRIGGER");
-
         var health = other.gameObject.GetComponent<Health>();
         if (health != null)
         {
@@ -42,8 +38,6 @@ public class BulletPlayer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("COLISION");
-
         var health = other.gameObject.GetComponent<Health>();
         if (health != null)
         {

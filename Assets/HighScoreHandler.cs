@@ -28,7 +28,7 @@ public class HighScoreHandler : MonoBehaviour
         {
             onHighScoreChange.Invoke(HighScoreElements.highScoreElements);
         }
-        Debug.Log(HighScoreElements.highScoreElements.Count);
+
     }
 
     private void SaveHighScores()

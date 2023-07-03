@@ -6,10 +6,11 @@ public class HealthPickupElem : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerHealth>().IncreaseLife();
+            Debug.Log("Health pickup collected");
             GameObject.Destroy(gameObject);
+            collision.gameObject.GetComponent<PlayerHealth>().IncreaseLife();
         }
     }
 }

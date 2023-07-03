@@ -29,16 +29,15 @@ public class BulletEnemy1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        GameObject.Destroy(gameObject);
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
         var playerHealth = other.gameObject.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
             playerHealth.TakeDamage();
         }
-
-        GameObject.Destroy(gameObject);
-    }
-    private void OnCollisionEnter2D(Collision2D other)
-    {
         GameObject.Destroy(gameObject);
     }
 }

@@ -58,7 +58,7 @@ public class ScoreManager : MonoBehaviour
         difficulty++;
         foreach (var enemyHealth in enemiesHealth)
         {
-            Debug.Log("Increasing enemy health");
+
             enemyHealth.total += 1f;
             enemyHealth.current = enemyHealth.total;
         }
