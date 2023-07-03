@@ -3955,7 +3955,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8256933969817343160, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
 --- !u!50 &1982781895830009849 stripped
 Rigidbody2D:
