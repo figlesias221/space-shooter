@@ -59,6 +59,8 @@ public class SpawnEnemies : MonoBehaviour
         else if (randomEnemy == 2)
         {
             Instantiate(enemyPrefab3, transform.position + spawnPosition, transform.rotation);
+            Instantiate(enemyPrefab3, transform.position + spawnPosition + new Vector3(-1.4f, -1.4f, 0f), transform.rotation);
+            Instantiate(enemyPrefab3, transform.position + spawnPosition + new Vector3(1.4f, -1.4f, 0f), transform.rotation);
         }
     }
 }
