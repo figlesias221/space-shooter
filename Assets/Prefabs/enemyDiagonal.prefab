@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6386699792755839327}
   m_Layer: 9
   m_Name: enemyDiagonal
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: 1
   total: 1
-  scoreManager: {fileID: 0}
+  starPrefab: {fileID: 5255879830778646383, guid: 38598959aeb9d494db30590867c67056, type: 3}
 --- !u!114 &6386699792755839327
 MonoBehaviour:
   m_ObjectHideFlags: 0

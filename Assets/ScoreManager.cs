@@ -4,13 +4,12 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI killsText;
 
     public Health[] enemiesHealth;
     private int score = 0;
+    private int kills = 0;
     private int scoreIncrement = 15; // Score increment to trigger difficulty increase
     private int difficulty = 1; // Initial difficulty level
-    private float scoreAccumulator = 0f; // Accumulates time to track score increment
     private void Start()
     {
         scoreText.text = "Score: " + score.ToString();
@@ -19,22 +18,12 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        UpdateKillsText();
+        UpdateScore();
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            scoreAccumulator += Time.deltaTime;
-
-            if (scoreAccumulator >= 1f)
+            if (score + 1 % (scoreIncrement) == 0)
             {
-                score += 1 * difficulty;
-                scoreAccumulator -= 1f;
-
-                UpdateScoreText();
-
-                if (score % (scoreIncrement) == 0)
-                {
-                    IncreaseDifficulty();
-                }
+                IncreaseDifficulty();
             }
         }
         else
@@ -43,13 +32,20 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    public void UpdateKillsText()
+    private void UpdateScore()
     {
-        killsText.text = "Kills: " + PlayerPrefs.GetInt("Kills").ToString();
+        int oldKills = kills;
+        kills = PlayerPrefs.GetInt("Kills");
+        if (kills > oldKills)
+        {
+            score += 1;
+            scoreText.text = "Score: " + score.ToString();
+        }
     }
 
-    private void UpdateScoreText()
+    public void IncreaseScoreStar()
     {
+        score += 3;
         scoreText.text = "Score: " + score.ToString();
     }
 
@@ -58,7 +54,6 @@ public class ScoreManager : MonoBehaviour
         difficulty++;
         foreach (var enemyHealth in enemiesHealth)
         {
-
             enemyHealth.total += 1f;
             enemyHealth.current = enemyHealth.total;
         }

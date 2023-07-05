@@ -451,10 +451,11 @@ MonoBehaviour:
     -
     infinite survival
 
-    - points for kills and time of play
+    - 1 point per kill, 3 points per star
 
 
-    have fun! :)'
+    have fun!
+    :)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9389937ceee24d74d8d5ee3911db043b, type: 2}
   m_sharedMaterial: {fileID: -8190754948727344619, guid: 9389937ceee24d74d8d5ee3911db043b, type: 2}

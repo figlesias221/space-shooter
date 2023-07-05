@@ -7,16 +7,13 @@ using TMPro;
 public class GameOverMenu : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI killsText;
     public string playerName;
     [SerializeField] HighScoreHandler highScoreHandler;
 
     public void Start()
     {
         string playerScore = PlayerPrefs.GetFloat("Player Score").ToString();
-        string playerKills = PlayerPrefs.GetInt("Kills").ToString();
         scoreText.text = "Score: " + playerScore;
-        killsText.text = "Kills: " + playerKills; 
     }
 
     public void OnMainMenu()
@@ -38,6 +35,6 @@ public class GameOverMenu : MonoBehaviour
     public void ReadInput(string input)
     {
         playerName = input;
-        PlayerName.Name = playerName; 
+        PlayerName.Name = playerName;
     }
 }

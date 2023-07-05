@@ -6,7 +6,6 @@ public class CreditsMenu : MonoBehaviour
 {
     public void OnBack()
     {
-        // Load the "MainMenu" scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

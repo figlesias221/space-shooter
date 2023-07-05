@@ -87,9 +87,13 @@ MonoBehaviour:
   speed: 5
   minDamage: 1
   maxDamage: 1
+  fireCooldown:
+    total: 0
+    current: 0
   timeToLive:
     total: 2
     current: 0
+  burstCount: 3
 --- !u!1 &7689768717592315988
 GameObject:
   m_ObjectHideFlags: 0

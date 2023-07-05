@@ -1,14 +1,14 @@
-using System;
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine;
+using UnityEngine.UI;
 public class BulletPlayer : MonoBehaviour
 {
     public float speed;
     public int minDamage, maxDamage;
     public Cooldown timeToLive;
-
-    // public GameObject hitFxPrefab;
-
     public void Fire()
     {
         var body = GetComponent<Rigidbody2D>();
@@ -34,6 +34,7 @@ public class BulletPlayer : MonoBehaviour
         }
 
         GameObject.Destroy(gameObject);
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
