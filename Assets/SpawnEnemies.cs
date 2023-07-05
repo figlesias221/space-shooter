@@ -58,9 +58,13 @@ public class SpawnEnemies : MonoBehaviour
         }
         else if (randomEnemy == 2)
         {
-            Instantiate(enemyPrefab3, transform.position + spawnPosition, transform.rotation);
-            Instantiate(enemyPrefab3, transform.position + spawnPosition + new Vector3(-1.4f, -1.4f, 0f), transform.rotation);
-            Instantiate(enemyPrefab3, transform.position + spawnPosition + new Vector3(1.4f, -1.4f, 0f), transform.rotation);
+            float randomXSpecial = Random.Range(-1, 1);
+            Vector3 spawnPositionSpecial = new Vector3(randomXSpecial, randomY, 0);
+            Instantiate(enemyPrefab3, transform.position + spawnPositionSpecial, transform.rotation);
+            Instantiate(enemyPrefab3, transform.position + spawnPositionSpecial + new Vector3(-1.2f, -1.2f, 0f), transform.rotation);
+            Instantiate(enemyPrefab3, transform.position + spawnPositionSpecial + new Vector3(1.2f, -1.2f, 0f), transform.rotation);
+            Instantiate(enemyPrefab3, transform.position + spawnPositionSpecial + new Vector3(-2.4f, -2.4f, 0f), transform.rotation);
+            Instantiate(enemyPrefab3, transform.position + spawnPositionSpecial + new Vector3(2.4f, -2.4f, 0f), transform.rotation);
         }
     }
 }
