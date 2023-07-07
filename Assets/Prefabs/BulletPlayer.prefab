@@ -90,6 +90,9 @@ MonoBehaviour:
   timeToLive:
     total: 2
     current: 0
+  starPrefab: {fileID: 5255879830778646383, guid: 38598959aeb9d494db30590867c67056, type: 3}
+  minX: 3
+  maxX: -3
 --- !u!1 &7689768717592315988
 GameObject:
   m_ObjectHideFlags: 0

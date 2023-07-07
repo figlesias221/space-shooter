@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 [System.Serializable]
 public class Cooldown
 {
@@ -15,5 +11,10 @@ public class Cooldown
     public void Reset()
     {
         current = 1;
+    }
+
+    public void StartCooldown()
+    {
+        current = 0f;
     }
 }

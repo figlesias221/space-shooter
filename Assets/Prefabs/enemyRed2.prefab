@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: -1025878666579516867}
   m_Layer: 9
   m_Name: enemyRed2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: 4
   total: 4
+  starPrefab: {fileID: 5255879830778646383, guid: 38598959aeb9d494db30590867c67056, type: 3}
 --- !u!114 &7384598717728045027
 MonoBehaviour:
   m_ObjectHideFlags: 0

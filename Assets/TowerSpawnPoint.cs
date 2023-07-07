@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TowerSpawnPoint : MonoBehaviour
 {
-    public GameObject towerPrefab;
+    public GameObject leftTowerPrefab;
+    public GameObject rightTowerPrefab;
     public float minX;
     public float maxX;
     public float minY;
@@ -26,11 +27,13 @@ public class TowerSpawnPoint : MonoBehaviour
     void SpawnTower()
     {
         bool spawnAtLeft = Random.value < 0.5;
+        GameObject towerPrefab = spawnAtLeft ? leftTowerPrefab : rightTowerPrefab;
+
         float randomX = spawnAtLeft ? minX : maxX;
         float randomY = Random.Range(minY, maxY);
 
         Vector3 spawnPosition = new Vector3(randomX, randomY, 0);
 
-        Instantiate(towerPrefab, transform.position + spawnPosition, transform.rotation * Quaternion.Euler(0, 0, spawnAtLeft ? 320 : 40));
+        Instantiate(towerPrefab, transform.position + spawnPosition, transform.rotation);
     }
 }
