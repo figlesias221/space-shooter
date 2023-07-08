@@ -783,6 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1128596423}
+  playerScoreText: {fileID: 1983258368}
   playerName: 
   highScoreHandler: {fileID: 2802102}
 --- !u!1 &217193373
@@ -3764,6 +3765,10 @@ PrefabInstance:
     - target: {fileID: 9142344603887510960, guid: de07ab25e16b445d783f6a0908c455cf, type: 3}
       propertyPath: m_fontSizeBase
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142344603887510962, guid: de07ab25e16b445d783f6a0908c455cf, type: 3}
+      propertyPath: m_Name
+      value: Player Score
       objectReference: {fileID: 0}
     - target: {fileID: 9142344603887510963, guid: de07ab25e16b445d783f6a0908c455cf, type: 3}
       propertyPath: m_AnchoredPosition.x

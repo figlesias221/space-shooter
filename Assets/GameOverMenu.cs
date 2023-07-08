@@ -12,7 +12,7 @@ public class GameOverMenu : MonoBehaviour
 
     public void Start()
     {
-        string playerScore = PlayerPrefs.GetFloat("Player Score").ToString();
+        string playerScore = GeneralScore.Score.ToString();
         scoreText.text = "Score: " + playerScore;
     }
 
@@ -27,7 +27,7 @@ public class GameOverMenu : MonoBehaviour
             playerName = PlayerName.Name;
         }
 
-        highScoreHandler.AddHighScoreIfPossible(new HighScoreElement(playerName, Mathf.RoundToInt(PlayerPrefs.GetFloat("Player Score"))));
+        highScoreHandler.AddHighScoreIfPossible(new HighScoreElement(playerName, Mathf.RoundToInt(GeneralScore.Score)));
 
         SceneManager.LoadScene("MainMenu");
     }
