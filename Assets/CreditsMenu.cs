@@ -7,5 +7,6 @@ public class CreditsMenu : MonoBehaviour
     public void OnBack()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        Destroy(GameObject.FindGameObjectWithTag("Music"));
     }
 }

@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be2ea560c530485497672fe53f45b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreManager: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: aa3a6b1973eb4be4582690853eddf5f5, type: 3}
 --- !u!1 &6736373045741639119
 GameObject:
   m_ObjectHideFlags: 0
