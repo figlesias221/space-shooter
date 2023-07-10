@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
+        Destroy(GameObject.FindGameObjectWithTag("Music"));
     }
 
     public void OnPauseButton()
