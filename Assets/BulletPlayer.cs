@@ -9,6 +9,7 @@ public class BulletPlayer : MonoBehaviour
     public float speed;
     public int minDamage, maxDamage;
     public Cooldown timeToLive;
+    public GameObject hitFxPrefab;
     public void Fire()
     {
         var body = GetComponent<Rigidbody2D>();
@@ -33,6 +34,7 @@ public class BulletPlayer : MonoBehaviour
             health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
         }
 
+        GameObject.Instantiate(hitFxPrefab, transform.position, transform.rotation);
         GameObject.Destroy(gameObject);
 
     }
@@ -44,7 +46,6 @@ public class BulletPlayer : MonoBehaviour
         {
             health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
         }
-
         GameObject.Destroy(gameObject);
     }
 }
