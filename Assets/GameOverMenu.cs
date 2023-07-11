@@ -28,7 +28,7 @@ public class GameOverMenu : MonoBehaviour
         }
 
         highScoreHandler.AddHighScoreIfPossible(new HighScoreElement(playerName, Mathf.RoundToInt(GeneralScore.Score)));
-
+        GeneralScore.Score = 0;
         SceneManager.LoadScene("MainMenu");
     }
 
