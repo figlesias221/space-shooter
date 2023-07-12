@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BulletPlayer : MonoBehaviour
 {
     public float speed;
-    public int minDamage, maxDamage;
+    public float minDamage, maxDamage;
     public Cooldown timeToLive;
     public GameObject hitFxPrefab;
     public void Fire()
@@ -31,6 +31,11 @@ public class BulletPlayer : MonoBehaviour
         var health = other.gameObject.GetComponent<Health>();
         if (health != null)
         {
+            if (WeaponType.TripleShoot)
+            {
+                minDamage = (float)(minDamage * 0.75);
+                maxDamage = (float)(maxDamage * 0.75);
+            }
             health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
         }
 

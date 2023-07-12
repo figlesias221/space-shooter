@@ -142,3 +142,4 @@ MonoBehaviour:
   timeToLive:
     total: 2
     current: 0
+  hitFxPrefab: {fileID: 6065186472423995325, guid: 44a1089ed7373400eb83e88b75882bd3, type: 3}
