@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 
     public Health[] enemiesHealth;
     private int kills = 0;
-    private int scoreIncrement = 15; // Score increment to trigger difficulty increase
+    private int scoreIncrement = 5; // Score increment to trigger difficulty increase
     private int difficulty = 1; // Initial difficulty level
     private void Start()
     {

@@ -783,7 +783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1128596423}
-  playerScoreText: {fileID: 1983258368}
   playerName: 
   highScoreHandler: {fileID: 2802102}
 --- !u!1 &217193373
@@ -3299,6 +3298,7 @@ GameObject:
   - component: {fileID: 1639824593}
   - component: {fileID: 1639824595}
   - component: {fileID: 1639824596}
+  - component: {fileID: 1639824597}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -3321,13 +3321,13 @@ MonoBehaviour:
   enemyPrefab1: {fileID: 8985136960124486807, guid: fb16dbe46f943453d8baa066c4108182, type: 3}
   enemyPrefab2: {fileID: 2963796092249254762, guid: f624d2c6cd7c44b4a94f141eb5953030, type: 3}
   enemyPrefab3: {fileID: 1727681151915990878, guid: 9d9ca47ab8aff4314984e59fc739991c, type: 3}
-  maxX: 3
-  minX: -3
+  maxX: 3.3
+  minX: -3.3
   maxY: 3.5
   minY: 3
-  spawnRate: 2.5
+  spawnRate: 2.3
   spawnRateIncrease: 0.1
-  spawnRateIncreaseInterval: 10
+  spawnRateIncreaseInterval: 8
 --- !u!4 &1639824594
 Transform:
   m_ObjectHideFlags: 0
@@ -3375,6 +3375,22 @@ MonoBehaviour:
   maxX: 3
   minX: -3
   isPickupCollected: 0
+--- !u!114 &1639824597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639824592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1af44a4a880c4994ac4cc9cee2960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tripleShootPickup: {fileID: 7925024794879254820, guid: cff5d45e91a9f5849bd11312bac11fce, type: 3}
+  spawnInterval: 50
+  maxX: 3
+  minX: -3
 --- !u!224 &1887491182 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8655754442646648240, guid: 6c8cf3ea0090c164ea23fa796f50b935, type: 3}
@@ -3615,6 +3631,10 @@ PrefabInstance:
       propertyPath: missilePrefab
       value: 
       objectReference: {fileID: 5070238703726605756, guid: 7987bde38b1b8473ba53ca1cd551cee2, type: 3}
+    - target: {fileID: 1982781896561335683, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
+      propertyPath: isTriggerPressed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1982781896561335690, guid: 2e63a044ffc6a42d8a882db07c9ce967, type: 3}
       propertyPath: m_Name
       value: player

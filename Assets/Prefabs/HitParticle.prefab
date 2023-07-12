@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 799945594568300716}
   - component: {fileID: 4297089202382296625}
   - component: {fileID: 7718113470745364218}
+  - component: {fileID: -1839125828180602154}
+  - component: {fileID: -5600916418622298453}
   m_Layer: 0
   m_Name: HitParticle
   m_TagString: Untagged
@@ -4813,6 +4815,33 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-1839125828180602154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065186472423995325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20df37549606c483ea0b51d27d8ce804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5600916418622298453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065186472423995325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8c4ff2b977a4590b48402beff1253f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToLive:
+    total: 2
+    current: 0
 --- !u!1 &6284175344643210630
 GameObject:
   m_ObjectHideFlags: 0

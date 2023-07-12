@@ -19,6 +19,7 @@ public class WeaponPlayer : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = clip;
+        WeaponType.TripleShoot = false;
     }
 
     private void FixedUpdate()
@@ -28,7 +29,16 @@ public class WeaponPlayer : MonoBehaviour
         if (reload.isReady && isTriggerPressed)
         {
             var bulletObject = GameObject.Instantiate(bulletPrefab, bulletAttachPoint.position, bulletAttachPoint.rotation);
+
+
             bulletObject.GetComponent<BulletPlayer>().Fire();
+
+            if (WeaponType.TripleShoot) { 
+                var bulletObject2 = GameObject.Instantiate(bulletPrefab, bulletAttachPoint.position, Quaternion.Euler(0, 0, 30));
+                var bulletObject3 = GameObject.Instantiate(bulletPrefab, bulletAttachPoint.position, Quaternion.Euler(0, 0, -30));
+                bulletObject2.GetComponent<BulletPlayer>().Fire();
+                bulletObject3.GetComponent<BulletPlayer>().Fire();
+            }
             audioSource.Play();
             reload.Reset();
         }
