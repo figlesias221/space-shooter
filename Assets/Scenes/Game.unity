@@ -3321,13 +3321,13 @@ MonoBehaviour:
   enemyPrefab1: {fileID: 8985136960124486807, guid: fb16dbe46f943453d8baa066c4108182, type: 3}
   enemyPrefab2: {fileID: 2963796092249254762, guid: f624d2c6cd7c44b4a94f141eb5953030, type: 3}
   enemyPrefab3: {fileID: 1727681151915990878, guid: 9d9ca47ab8aff4314984e59fc739991c, type: 3}
-  maxX: 3
-  minX: -3
+  maxX: 3.3
+  minX: -3.3
   maxY: 3.5
   minY: 3
-  spawnRate: 2.5
+  spawnRate: 2.3
   spawnRateIncrease: 0.1
-  spawnRateIncreaseInterval: 10
+  spawnRateIncreaseInterval: 8
 --- !u!4 &1639824594
 Transform:
   m_ObjectHideFlags: 0

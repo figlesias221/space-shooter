@@ -32,9 +32,13 @@ public class SpawnEnemies : MonoBehaviour
             nextSpawn = Time.time + spawnRate;
         }
 
-        if (Time.time > nextSpawnRateIncrease && spawnRate > minSpawnRate)
+        if (Time.time > nextSpawnRateIncrease)
         {
-            spawnRate -= spawnRateIncrease;
+            if (spawnRate > minSpawnRate)
+            {
+                spawnRate -= spawnRateIncrease;
+            }
+
             nextSpawnRateIncrease = Time.time + spawnRateIncreaseInterval;
         }
     }
